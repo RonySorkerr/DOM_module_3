@@ -31,11 +31,14 @@
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">Triangle</h2>
                       <p>Area = 0.5 X b X h</p>
+                        <div class="space-y-4">
+                            <input id="trialgle_base" class="border w-24 text-xl p-2 rounded-md text-left" type="text" placeholder="b">
+                            <span>cm</span>
+                            <input id="triangle_hieght" class="border w-24 text-xl p-2 rounded-md text-left" type="text" placeholder="h">
+                            <span>cm</span>
+                        </div>
                         <div class="">
-                            <input id="trialgle_base" class="w-24 text-xl p-2 rounded-md text-left" type="text" placeholder="b">
-                            <span>cm</span>
-                            <input id="triangle_hieght" class="w-24 text-xl p-2 rounded-md text-left" type="text" placeholder="h">
-                            <span>cm</span>
+                            <p>Area is :  <span id="triangle_ared"></span> <span>cm<sup>2</sup></span></p>
                         </div>
                         
                       <div class="card-actions w-full">
@@ -53,8 +56,18 @@
                     <div class="card-body items-center text-center">
                       <h2 class="card-title">Rectangle</h2>
                       <p>Area = w X I</p>
+                      <div class="space-y-3">
+                        <input class="w-24 p-2 rounded-md border" type="text" placeholder="W">
+                        <span>cm</span>
+                        <input class="w-24 p-2 rounded-md border" type="text" placeholder="I">
+                        <span>cm</span>
+                      </div>
+                      <div class="">
+                        <p>Area is : <span id="ractangle_area"></span> <span>cm<sup>2</sup></span></p>
+                      </div>
+
                       <div class="card-actions w-full">
-                        <button class="btn w-full">Calculate</button>
+                        <button onclick="calculateRactangleArea()" class="btn w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -125,7 +138,8 @@
         </div>
     </main>
 
-    <script src="script/script.js"></script>
+    <script src="script/triangleCalculate.js"></script>
+    <script src="script/ractangleCalculate.js"></script>
 </body>
 
 </html>
