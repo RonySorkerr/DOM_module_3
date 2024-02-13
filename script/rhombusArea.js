@@ -1,9 +1,9 @@
 function CalculateRhombusArea(){
-    const base = getInputById('d1');
-    const height = getInputById('d2');
+    const base = getInputById('dans1');
+    const height = getInputById('dans2');
     const area = 0.5 * base * height;
 
-    setOutputById('rhombus_area_output', area.toFixed(4));
+    setOutputById('area_output', area.toFixed(4));
     console.log('Area:', area);
 
 }
