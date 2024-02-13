@@ -8,13 +8,13 @@ function calculateRactangleArea(){
     const ractangleWidthValue = racangleWidthInput.value;
     const widht = parseFloat(ractangleWidthValue);
     
-    console.log('width is : ' , widht);
+    // console.log('width is : ' , widht);
 
     const ractangleHeightInput = document.getElementById('ractangle_height');
     const ractangleHeightValue = ractangleHeightInput.value;
     const Height = parseFloat(ractangleHeightValue);
 
-    console.log('heigh is : ', Height);
+    // console.log('heigh is : ', Height);
 
     const area = widht * Height;
 

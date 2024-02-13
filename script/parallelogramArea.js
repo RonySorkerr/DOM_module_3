@@ -7,7 +7,7 @@ function calculateParallelogramArea (){
     const area = base * height;
     console.log('area is : ', area);
 
-    setInnerTextById('Parallelogram_Area', area);
+    setInnerTextById('Parallelogram_Area', area.toFixed(4));
 }
 
 function getInputValueById (inputfieldId){
